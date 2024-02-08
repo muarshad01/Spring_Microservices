@@ -29,17 +29,18 @@
 
 ## 136. Step 01 - Setting up Limits Microservice - V2
 
-* Limits Microservice -> Spring Cloud Config Server -> Git Repo
+* Limits Microservice -> Spring-Cloud-Config-Server -> Local-Git Repo
 
 * https://start.spring.io
     * com.in28minutes.microservices
-    * limits-service
+    * `limits-service`
 
 * Dependencies
-    * web (RESTfu, Spring MVC, Apache Tomcat)
+    * Web (RESTfu, Spring MVC, Apache Tomcat)
     * DevTools (fast application restarts)
     * Actuator (monitor and manage your application)
     *
+
 ### Edit `application.properties`
 * spring.config.import=optional:configserver:http://localhost:8888
 
@@ -53,19 +54,19 @@
     * Explore other backups for this section (Steps 08,10,13,15,21,25,29, final) 
         * https://github.com/in28minutes/spring-microservices-v3/tree/main/03.microservices
 * Activity - 2: 
-    * Get Familiar with the structure of Step by Step changes file 
+    * Get Familiar with the structure of Step-by-Step changes file 
     * https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#step-01
 
 ***
 
-## 138 - Step 02 - Creating a hard coded limits service - V2
+## 138. Step 02 - Creating a hard-coded limits-service - V2
 
 * `@RestController`
 * `@GetMapping("/limits")`
 
 ***
 
-## 139. Step 03 - Enhance limits service - Get configuration from
+## 139. Step 03 - Enhance limits-service - Get configuration from application props
 
 * Edit `application.properties`
 ```
@@ -99,7 +100,7 @@ server.prot=8888
 
 ***
 
-## 141. Step 05 - Installing Git and Creating Local Git Repository - V2
+## 141. Step 05 - Installing Git and Creating Local-Git Repository - V2
 
 ```
 $ git --version
@@ -130,19 +131,19 @@ $ git add *
 
 ***
 
-## 142. Debugging problems with Spring Cloud Config Server - V2
+## 142. Debugging problems with Spring-Cloud-Config-Server - V2
 
 * https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#spring-cloud-config-server---steps-01-to-08
 
 ***
 
-## 143. Step 06 - Connect Spring-Cloud-Config-Server to Local Git
+## 143. Step 06 - Connect Spring-Cloud-Config-Server to Local-Git
 
 * `@EnableConfigServer`
 
 ***
 
-## 144. Step 07 - Connect Limits Service to Spring-Cloud-Config-Server - V2
+## 144. Step 07 - Connect Limits-Service to Spring-Cloud-Config-Server - V2
 
 * Edit `application.properties`
     * spring.profiles.active=dev
@@ -154,12 +155,13 @@ $ git add *
 
 ***
 
-## 146. Step 08 - Configuring Profiles for Limits Service - V2
+## 146. Step 08 - Configuring Profiles for Limits-Service - V2
 
 ***
 
 ## 147. Debugging Guide for Microservices V2 + Docker
 
+***
 ***
 
 ## 148. Step 09 - Introduction to Currency Conversion & Exchange
@@ -293,155 +295,3 @@ $ git add *
 ## 180. How to be producctive - 3 Tips
 
 ***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
