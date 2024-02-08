@@ -39,7 +39,7 @@
     * web (RESTfu, Spring MVC, Apache Tomcat)
     * DevTools (fast application restarts)
     * Actuator (monitor and manage your application)
-
+    *
 ### Edit `application.properties`
 * spring.config.import=optional:configserver:http://localhost:8888
 
@@ -60,9 +60,24 @@
 
 ## 138 - Step 02 - Creating a hard coded limits service - V2
 
+* `@RestController`
+* `@GetMapping("/limits")`
+
 ***
 
 ## 139. Step 03 - Enhance limits service - Get configuration from
+
+* Edit `application.properties`
+```
+spring.application.name=limits-service
+spring.config.import=optional:configserver:http://localhost:8888
+
+limits-service.minimum=3
+limits-service.maximum=997
+```
+
+* `@Component`
+* `@ConfigurationProperties("limits-service")`
 
 ***
 
