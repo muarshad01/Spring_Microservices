@@ -81,7 +81,7 @@ limits-service.maximum=997
 
 ***
 
-## 140. Step 04 - Setting up Spring Cloud Config Server - V2
+## 140. Step 04 - Setting up Spring-Cloud-Config-Server - V2
 
 * https://start.spring.io/
     * Group: com.in28minutes.microservices
@@ -106,10 +106,12 @@ $ git --version
 ````
 
 ```
-$ pwd
+$ mkdir -p ~/Desktop/in28minutes/git/spring-microservice-v2
+$ cd       ~/Desktop/in28minutes/git/spring-microservice-v2
 $ mkdir git-localconfig-repo
-$ cd git-localconfig-repo
+$ cd    git-localconfig-repo
 $ git init
+$ ls -a
 ```
 
 ```
@@ -123,6 +125,8 @@ limits-service.maximum=996
 $ git add *
 * git commit -m "adding limits-service.properties"
 ```
+
+* http://localhost:8888/limits-service/default
 
 ***
 
