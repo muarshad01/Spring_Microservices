@@ -1,5 +1,13 @@
 ## 132. What's NEW in V2?
 
+* `Spring Cloud LoadBalancer` (earlier `Ribbon`)
+* `Spring Cloud Gateway` (earlier `Zuul`)
+* `Resilience4j` (earlier `Hystrix`)
+* Containerize Microservices
+    * Docker & Docker Compose
+* Kubernetes
+    * Orchestrate Microservices with Kubernetes
+
 ***
 
 ## 133. recdommended
