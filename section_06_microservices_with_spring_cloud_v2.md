@@ -124,19 +124,25 @@ $ git add *
 * git commit -m "adding limits-service.properties"
 ```
 
-* https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#spring-cloud-config-server---steps-01-to-08
-
 ***
 
 ## 142. Debugging problems with Spring Cloud Config Server - V2
 
-***
-
-## 143. Step 06 - Connect Spring Cloud Config Server to Local Git
+* https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#spring-cloud-config-server---steps-01-to-08
 
 ***
 
-## 144. Step 07 - Connect Limits Service to Spring Cloud Config
+## 143. Step 06 - Connect Spring-Cloud-Config-Server to Local Git
+
+* `@EnableConfigServer`
+
+***
+
+## 144. Step 07 - Connect Limits Service to Spring-Cloud-Config-Server - V2
+
+* Edit `application.properties`
+    * spring.profiles.active=dev
+    * spring.cloud.config.profile=dev
 
 ***
 
