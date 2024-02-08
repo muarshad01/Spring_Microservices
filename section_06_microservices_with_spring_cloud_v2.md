@@ -29,9 +29,32 @@
 
 ## 136. Step 01 - Setting up Limits Microservice - V2
 
+* Limits Microservice -> Spring Cloud Config Server -> Git Repo
+
+### https://start.spring.io
+* com.in28minutes.microservices
+* limits-service
+
+### Dependencies
+* web (RESTfu, Spring MVC, Apache Tomcat)
+* DevTools (fast application restarts)
+* Actuator (monitor and manage your application)
+
+### Edit `application.properties`
+* spring.config.import=optional:configserver:http://localhost:8888
+
 ***
 
-## 137 - 
+## 137 - Code Backup Files
+
+### Two Recommended Activities
+
+* Activity - 1: 
+    * Explore other backups for this section (Steps 08,10,13,15,21,25,29, final) 
+        * https://github.com/in28minutes/spring-microservices-v3/tree/main/03.microservices
+* Activity - 2: 
+    * Get Familiar with the structure of Step by Step changes file 
+    * https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#step-01
 
 ***
 
@@ -206,24 +229,6 @@
 ## 180. How to be producctive - 3 Tips
 
 ***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
