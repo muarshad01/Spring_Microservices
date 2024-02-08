@@ -10,7 +10,10 @@
 
 ***
 
-## 133. recdommended
+## 133. Recommended
+
+* Spring Boot 3
+* [Git Code](https://github.com/in28minutes/spring-microservices-v3)
 
 ***
 
@@ -19,6 +22,8 @@
 ***
 
 ## 135. Course Downloads
+
+* [Microservices with Spring Boot and Spring Cloud - Resources](https://www.in28minutes.com/resources-microservices-course)
 
 ***
 
