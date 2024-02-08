@@ -1,5 +1,8 @@
 # Spring Microservices
 
+* [Git Code](https://github.com/in28minutes/spring-microservices-v3)
+* [Course Downloads](https://www.in28minutes.com/resources-microservices-course)
+
 ***
 
 * [Section 04: Quick Introduction to Microservices](https://github.com/muarshad01/Spring_Microservices/blob/main/section_04_quick_introduction_to_microservices.md)
