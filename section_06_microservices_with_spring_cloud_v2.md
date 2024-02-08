@@ -83,9 +83,48 @@ limits-service.maximum=997
 
 ## 140. Step 04 - Setting up Spring Cloud Config Server - V2
 
+* https://start.spring.io/
+    * Group: com.in28minutes.microservices
+    * Atrifact: spring-cloud-config-server
+    * Description: Centralized Configuration Server
+* Dependencies
+    * Spring Boot DevTools
+    * Config Server
+
+* Edit `application.properties`
+```
+spring.application.name=spring-cloud-config-server
+server.prot=8888
+```
+
 ***
 
 ## 141. Step 05 - Installing Git and Creating Local Git Repository - V2
+
+```
+$ git --version
+````
+
+```
+$ pwd
+$ mkdir git-localconfig-repo
+$ cd git-localconfig-repo
+$ git init
+```
+
+```
+$ touch limits-service.properties
+
+limits-service.minimum=4
+limits-service.maximum=996
+```
+
+```
+$ git add *
+* git commit -m "adding limits-service.properties"
+```
+
+* https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#spring-cloud-config-server---steps-01-to-08
 
 ***
 
