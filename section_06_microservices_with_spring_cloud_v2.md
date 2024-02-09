@@ -177,7 +177,8 @@ $ git add *
 
 * Currency Exchange Microservice
     * http://localhost:8000/currency-exchange/from/USD/to/INR
-* Currency Conversion Microservice -> Currency Exchange Microservice
+
+* Currency Conversion Microservice
     * http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
   
 ***
@@ -195,7 +196,7 @@ $ git add *
 
 * Edit `application.properties`
     * spring.application.name=currency-exchange
-    * spring.port=8000
+    * server.port=8000
 
 ***
 
@@ -207,9 +208,14 @@ $ git add *
 
 ## 151. Step 11 - Create a simple hard coded currency exchange
 
+* `@PathVariable`
+
 ***
 
 ## 152. Step 12 - Setting up Dynamic Port in the Response - V2
+
+* Currency Conversion Microservice -> Load Balancer -> Naming Server
+* Load Balancer -> {Currency Exchange - Instance 1, Currency Exchange - Instance 2, Currency Exchange - Instance 3}
 
 ***
 
