@@ -295,9 +295,18 @@ values (1003,'AUD','INR',25,'');
 
 ## 157. Step 15 - Setting up Currency Conversion Microservice - V2
 
+* Edit `application.properties`
+```xml
+spring.config.import=optional:configserver:http://localhost:888
+spring.application.name=currency-conversion
+server.port=8100
+```
+
 ***
 
 ## 158. URL and Response Structure for Currency Conversion Service
+
+* http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
 
 ***
 
