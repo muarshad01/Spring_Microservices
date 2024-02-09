@@ -215,7 +215,16 @@ $ git add *
 ## 152. Step 12 - Setting up Dynamic Port in the Response - V2
 
 * Currency Conversion Microservice -> Load Balancer -> Naming Server
-* Load Balancer -> {Currency Exchange - Instance 1, Currency Exchange - Instance 2, Currency Exchange - Instance 3}
+* Load Balancer -> {Currency Exchange - Instance 1 (8000), Currency Exchange - Instance 2 (8001), Currency Exchange - Instance 3 (8002)}
+
+```java
+@Autowired
+private Environment environment;
+
+CurrencyExchange currencyExchange = new CurrencyExchange(1000L, from, to, BigDecimal.valueOf(50));
+String port = environment.getProperty("local.server.port");
+currencyExchange.setEnvironment(port);
+```
 
 ***
 
