@@ -235,6 +235,8 @@ currencyExchange.setEnvironment(port);
 
 ## 153. Step 13 - Configure JPA and Initialized Data - V2
 
+
+
 ***
 
 ## 154. Code backup
@@ -250,6 +252,41 @@ currencyExchange.setEnvironment(port);
 
 ## 155. Create a JPA Repository - V2
 
+* Use in-memory database `H2`
+* Use JPA to talk to `H2`
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+</dependency>
+```
+
+* Edit `application.properties`
+```
+spring.jpa.defer-datasource-initialization=true
+
+spring.jpa.show-sql=true
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.h2.console.enabled=true
+```
+
+* `@Entity`
+* `@Id`
+
+```
+insert into currency_exchange(id,currency_from,currency_to,conversion_multiple,environment)
+values (1001,'USD','INR',65,'');
+insert into currency_exchange(id,currency_from,currency_to,conversion_multiple,environment)
+values (1002,'EUR','INR',75,'');
+insert into currency_exchange(id,currency_from,currency_to,conversion_multiple,environment)
+values (1003,'AUD','INR',25,'');
+```
 ***
 
 ## 156. How to take care of yourselves
