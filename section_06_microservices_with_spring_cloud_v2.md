@@ -175,13 +175,33 @@ $ git add *
 
 ## 148. Step 09 - Introduction to Currency Conversion & Exchange
 
+* Currency Exchange Microservice
+    * http://localhost:8000/currency-exchange/from/USD/to/INR
+* Currency Conversion Microservice -> Currency Exchange Microservice
+    * http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+  
 ***
 
 ## 149. Step 10 - Setting up Currency Exchange Microservice - V2
 
+* http://start.spring.io
+    * Group:com.in28minutes.microservices
+    * Artifact: currency-exchange-service
+* Dependencies
+    * Spring Web
+    * Spring Boot DevTools
+    * Spring Boot Actuator
+    * Config Client
+
+* Edit `application.properties`
+    * spring.application.name=currency-exchange
+    * spring.port=8000
+
 ***
 
 ## 150. URL and Response Structure for Currency Exchange Service
+
+* http://localhost:8000/currency-exchange/from/USD/to/INR
 
 ***
 
@@ -189,15 +209,22 @@ $ git add *
 
 ***
 
-## 152. Step 12 - Setting up Dynamc Port in the Response - V2
+## 152. Step 12 - Setting up Dynamic Port in the Response - V2
 
 ***
 
-## 153. Step 13 - Configur JPA and Initialized Data - V2
+## 153. Step 13 - Configure JPA and Initialized Data - V2
 
 ***
 
 ## 154. Code backup
+
+### Help for Debugging Problems:
+* Here's the code backup at the end of Step 13: 
+    * https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/step13.md
+
+* Step by Step changes are detailed here: 
+    * https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#step-13
 
 ***
 
