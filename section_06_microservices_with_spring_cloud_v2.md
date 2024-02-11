@@ -386,9 +386,33 @@ eureka.client.fetch-registry=false
 
 ## 169. Step 22 - Setting up Spring Cloud API Gateway
 
+* Project Metadata
+    * com.in28minutes.microservices
+    * api-gateway
+* Dependencies
+    * Spring Boot DevTools
+    * Spring Boot Actuator
+    * Eureka Discovery Client
+    * Gateway
+
+```
+spring.application.name=api-gateway
+server.port=8765
+```
+
 ***
 
 ## 170. URLs for next Lecture
+
+```
+- http://localhost:8765/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
+```
 
 ***
 
