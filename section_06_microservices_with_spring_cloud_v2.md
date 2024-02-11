@@ -466,6 +466,14 @@ server.port=8765
 
 ## 177. Step 27 - Playing with Resilience4j - Retry and Fallback
 
+* `@Retry(name="default", fallbackMethod="hardcodedResponse")`
+
+```
+resilience4j.retry.instances.sample-api.maxRetryAttempts=5
+resilience4j.retry.instances.sample-api.waitDuration=1s
+resilience4j.retry.instances.sample-api.enableExponentialBackoff=true
+```
+
 ***
 
 ## 178. Step 28 - Playing with Circuit Breaker Features of Resilience4j
