@@ -8,6 +8,9 @@
 * Kubernetes
     * Orchestrate Microservices with Kubernetes
 
+### Other Services
+    * Naming Server (`Eureka`)
+    * Declarative web service client (`Feign`)
 ***
 
 ## 133. Recommended
