@@ -478,9 +478,19 @@ resilience4j.retry.instances.sample-api.enableExponentialBackoff=true
 
 ## 178. Step 28 - Playing with Circuit Breaker Features of Resilience4j
 
+* `@CircuitBreaker(name="default", fallbackMethod="hardcodedResponse")`
+
+* `watch -n 0.1 http://localhost:8000/sample-api`
+
 ***
 
 ## 179. Step 29 - Exploring Rate Limiting and BulkHead Features of
+
+* Edit `application.properties`
+```
+resilience.ratelimiter.instance.default.limitForPeriod=2
+resilience.ratelimiter.instance.default.limitRefreshPeriod=10s
+```
 
 ***
 
