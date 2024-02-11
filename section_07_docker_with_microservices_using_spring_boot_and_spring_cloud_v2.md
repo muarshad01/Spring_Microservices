@@ -50,7 +50,7 @@
 
 ***
 
-## 194. Step 11 - Launching Zipkin Container using Docker
+## 194. Step 11 - Launching `Zipkin` Container using Docker
 
 ***
 
