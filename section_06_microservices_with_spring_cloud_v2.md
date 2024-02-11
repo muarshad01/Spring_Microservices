@@ -437,6 +437,17 @@ server.port=8765
 
 ## 174. Step 25 - Implementing Spring Cloud Gateway Logging Filter
 
+* Simple, yet effective way to route to APIs
+* Provide cross cutting concerns:
+    * Security
+    * Monitoring/metrics
+* Built on top of Spring WebFlux (Reactive Approach)
+* Features:
+    * Match routes on any request attribute
+    * Define Predicates and Filters
+    * Integrates with Spring Cloud Discovery Client (Load Balancing)
+    * Path Rewriting
+
 ***
 
 ## 175. Step 26 - Getting started with Circuit Breaker - Resilience4j
