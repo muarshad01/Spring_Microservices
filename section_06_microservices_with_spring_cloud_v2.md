@@ -320,6 +320,16 @@ server.port=8100
 
 ## 161. Step 18 - Using Feign REST Client for Service Invocation - V2
 
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+```
+
+* `@EnableFeignClients`
+* `@FeignClient(name = "currency-exchange", url="localhost:8000")`
+
 ***
 
 ## 162. Step 19 - Understand Naming Server and Setting up Eureka
