@@ -334,13 +334,37 @@ server.port=8100
 
 ## 162. Step 19 - Understand Naming Server and Setting up Eureka
 
+* Project Metadata
+    * com.in28minutes.microservices
+    * naming-server
+* Dependencies
+    * Spring Boot DevTools
+    * Spring Boot Actuator
+    * Eureka Server
+
+* `@EnableEurekaServer`
+
+```
+spring.application.name=naming-server
+server.port=8761
+
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+```
 ***
 
 ## 163. Debugging Problems with Eureka - V2
 
+### Complete Debugging Guide
+
+* https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#eureka---step-19-to-21
+
 ***
 
 ## 164. Step 20 - Connect Currency Conversion & Currency Exchange
+
+Edit `application.properties`
+    * eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
 
 ***
 
