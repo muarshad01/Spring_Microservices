@@ -486,6 +486,8 @@ resilience4j.retry.instances.sample-api.enableExponentialBackoff=true
 
 ## 179. Step 29 - Exploring Rate Limiting and BulkHead Features of
 
+* `@RateLimiter(name="default")`
+
 * Edit `application.properties`
 ```
 resilience.ratelimiter.instance.default.limitForPeriod=2
@@ -496,4 +498,12 @@ resilience.ratelimiter.instance.default.limitRefreshPeriod=10s
 
 ## 180. How to be producctive - 3 Tips
 
+### Minimize Distractions
+* Put your phone away on silent mode
+* Close unnecessary browser tabs
+
+### Find Productive Zone
+
+### POMODORO Technique
+* 2 mins work followed by 5 mins break
 ***
