@@ -363,7 +363,7 @@ eureka.client.fetch-registry=false
 
 ## 164. Step 20 - Connect Currency Conversion & Currency Exchange
 
-Edit `application.properties`
+* Edit `application.properties`
     * eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
 
 ***
