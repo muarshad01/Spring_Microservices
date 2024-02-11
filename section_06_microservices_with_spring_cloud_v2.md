@@ -452,6 +452,12 @@ server.port=8765
 
 ## 175. Step 26 - Getting started with Circuit Breaker - Resilience4j
 
+* Questions:
+    * Can we return fallback-response if a service is down?
+    * Can we retry requests in case of temporary failures?
+    * Can we implement a Circuit-Breaker-pattern to reduce load?
+    * Can we implement rate-limiting?
+
 ***
 
 ## 176. Do not skip
