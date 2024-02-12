@@ -4,6 +4,16 @@
 
 ## 182. Step 01 - Installing Docker - Docker - V2
 
+```
+$ docker --version
+
+Docker version 20.10.22, build 3a2c30b
+```
+
+```
+$ docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
+```
+
 ***
 
 ## 183. Recommendation
