@@ -62,7 +62,9 @@ $ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
 
 * Docker Client
     * Docker Daemon
-        * {Image Registry, Local Images, Containers}
+        * Image Registry
+        * Local Images
+        * Containers
 
 ***
 
