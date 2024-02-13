@@ -26,6 +26,19 @@ $ docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 ## 185. Step 03 - Docker Concepts - Registry, Repository, Tag, Image
 
+* Default Registry (`https://hub.docker.com/`)
+    * Repository (`https://hub.docker.com/r/in28min/todo-rest-api-h2`)
+        * Tag (`1.0.0.RELEASE`)
+
+* `-p 5000:5000 => -p {HostPort}:{ContainerPort}`
+```
+$ docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+```
+* http://localhost:5000/hello-world
+* http://localhost:5000/hello-world-bean
+
+* A Container is a running version of an image.
+
 ***
 
 ## 186. Step 04 - Playing with Docker Images and Containers
