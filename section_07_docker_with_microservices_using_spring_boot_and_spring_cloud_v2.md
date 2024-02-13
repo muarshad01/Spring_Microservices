@@ -60,7 +60,9 @@ $ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
 
 ## 187. Step 05 - Understanding Docker Architecture - Docker Client, Docker Engine
 
-* Docker Client -> Docker Daemon -> {Image Registry, Local Images, Containers}
+* Docker Client
+    * Docker Daemon
+        * {Image Registry, Local Images, Containers}
 
 ***
 
