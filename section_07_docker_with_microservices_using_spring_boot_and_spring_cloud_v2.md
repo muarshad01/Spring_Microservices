@@ -45,16 +45,11 @@ $ docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 ```
 $ docker container ls -a
-
 $ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
-
-$ docker logs -f <image-id>
-
+$ docker logs -f <container ID>
 $ docker images
-
-$ docker container ls -a
-
-$ docker container stop <image-id>
+$ docker container stop <container ID>
+$ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
 ```
 ***
 
