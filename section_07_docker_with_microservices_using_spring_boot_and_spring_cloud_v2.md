@@ -43,9 +43,24 @@ $ docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 ## 186. Step 04 - Playing with Docker Images and Containers
 
+```
+$ docker container ls -a
+
+$ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+$ docker logs -f <image-id>
+
+$ docker images
+
+$ docker container ls -a
+
+$ docker container stop <image-id>
+```
 ***
 
-## 187. Step 05 - Understanding Docker Architecture - Docker Client, 
+## 187. Step 05 - Understanding Docker Architecture - Docker Client, Docker Engine
+
+* Docker Client -> Docker Daemon -> {Image Registry, Local Images, Containers}
 
 ***
 
