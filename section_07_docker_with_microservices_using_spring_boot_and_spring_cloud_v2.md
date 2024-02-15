@@ -156,13 +156,26 @@ $ docker system df      # What resources are being managed by docker deamon
 * How do you debug problems?
 * How do you trace requests across microservices?
 
+### Distributed Tracking Server
+* Zipkin
+
 ***
 
 ## 194. Step 11 - Launching `Zipkin` Container using Docker
 
+```
+$ docker run -p 9411:9411 openzipkin/zipkin:2.23
+```
+
+* http://localhost:9411/zipkin
+
 ***
 
 ## 195. Step 12 - Getting Started with Observability
+
+* `OpenTelemetry`
+    * Collection of tools, APIs, and SDKs to 
+    * instrument, generate, collect, & export telemetry data (metrics, logs, & traces) 
 
 ***
 
