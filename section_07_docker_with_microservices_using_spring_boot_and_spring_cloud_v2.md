@@ -70,6 +70,30 @@ $ docker run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
 
 ## 188. Step 06 - Why is Docker Popular
 
+```
+$ docker images
+```
+
+* You can give single image multiple Tags also
+
+```
+$ docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
+```
+
+```
+$ docker search mysql
+
+$ docker pull mysql
+```
+
+```
+$ docker image history <image ID>
+$ docker image inspect <image ID>
+```
+
+```
+$ docker image remove <image ID>
+```
 ***
 
 ## 189. Step 07 - Playing with Docker Images
