@@ -181,6 +181,8 @@ $ docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 ## 196. Next Lecture - Configuration for Connecting Microservices with Zipkin
 
+*  https://github.com/in28minutes/spring-microservices-v3/blob/main/v3-upgrade.md
+
 ***
 
 ## 197. Step 12 - Connecting Currency Exchange Microservice with Zipkin
