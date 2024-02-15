@@ -143,9 +143,18 @@ $ docker system df      # What resources are being managed by docker deamon
 
 ## 192. Why you should teach others
 
+* Enhances Understanding
+* Improve Communication Skill
+* Builds Confidence
+* Encourages Learning
+
 ***
 
 ## 193. Step 10 - Introduction to Distributed Tracing
+
+* Complex call chain
+* How do you debug problems?
+* How do you trace requests across microservices?
 
 ***
 
