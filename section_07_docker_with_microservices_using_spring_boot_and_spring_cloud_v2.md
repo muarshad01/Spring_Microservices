@@ -102,6 +102,29 @@ $ docker image remove <image ID>
 
 ## 190. Step 08 - Playing with Docker Containers
 
+```
+$ docker container run -9 5000:5000                   in28min/todo-rest-api-h2:1.0.0.RELEASE
+$ docker           run -9 5000:5000                   in28min/todo-rest-api-h2:1.0.0.RELEASE
+$ docker           run -9 5000:5000 -d                in28min/todo-rest-api-h2:1.0.0.RELEASE
+$ docker           run -9 5000:5000 -d restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
+```
+
+### Pause & Unpause
+```
+$ docker container   pause <container ID>
+$ docker container unpause <container ID>
+
+$ docker logs -f <container ID>
+
+$ docker container inspect <container ID>
+$ docker container ls -a
+$ docker container prune
+
+$ docker container stop <container ID>
+$ docker container kill <container ID>
+
+
+```
 ***
 
 ## 191. Step 09 - Playing with Docker Commands - stats, system
