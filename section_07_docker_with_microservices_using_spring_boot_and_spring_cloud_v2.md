@@ -107,7 +107,9 @@ $ docker container run -9 5000:5000                   in28min/todo-rest-api-h2:1
 $ docker           run -9 5000:5000                   in28min/todo-rest-api-h2:1.0.0.RELEASE
 $ docker           run -9 5000:5000 -d                in28min/todo-rest-api-h2:1.0.0.RELEASE
 $ docker           run -9 5000:5000 -d restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
+$ docker           run -9 5000:5000 -m 512m --cpu-quota 5000 -d restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
 ```
+* `cpu-quota` is 100,000 so 5,000 (5%)
 
 ### Pause & Unpause
 ```
@@ -128,6 +130,14 @@ $ docker container kill <container ID>
 ***
 
 ## 191. Step 09 - Playing with Docker Commands - stats, system
+
+```
+$ docker events
+$ docker top        # Top processing running in a specific container
+$ docker stats
+$ docker run -9 5000:5000 -m 512m --cpu-quota 5000 -d restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
+$ docker system df      # What resources are being managed by docker deamon
+```
 
 ***
 
