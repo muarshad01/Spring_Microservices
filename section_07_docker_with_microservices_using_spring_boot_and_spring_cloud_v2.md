@@ -256,10 +256,57 @@ $ docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 ## 202. Step 16 - Getting Started with Docker Compose - Currency
 
+* Edit `docker-compose.yaml`
+```
+version:'3.7'
+
+services:
+    currency-exchange:
+        image: in28min/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+        - "8000:8000"
+        networks:
+        - currency-network
+
+networks:
+    currency-network:
+```
+
+```
+$ docker-compose up
+```
+
 ***
 
 ## 203. Step 17 - Running Eureka Naming Server with Docker Compose
+```
+version:'3.7'
 
+services:
+    currency-exchange:
+        image: in28min/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+        - "8000:8000"
+        networks:
+        - currency-network
+
+    naming-server:
+        image: in28min/mmv2-naming-server:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+            - "8761:8761"
+        networks:
+            - currency-network
+        depends_on:
+            - naming-server
+        environment:
+            EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+        
+networks:
+    currency-network:
+```
 ***
 
 ## 204. Step 18 - Running Currency Conversion Microservice with Docker
