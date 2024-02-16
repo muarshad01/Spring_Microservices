@@ -311,6 +311,44 @@ networks:
 
 ## 204. Step 18 - Running Currency Conversion Microservice with Docker
 
+```
+version:'3.7'
+
+services:
+    currency-exchange:
+        image: in28min/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+        - "8000:8000"
+        networks:
+        - currency-network
+        depends_on:
+            - naming-server
+        environment:
+            EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+    
+    currency-conversion:
+        image: in28min/mmv2-currency-conversion-service:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+        - "8100:8100"
+        networks:
+        - currency-network
+        depends_on:
+            - naming-server
+        environment:
+            EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+    
+    naming-server:
+        image: in28min/mmv2-naming-server:0.0.1-SNAPSHOT
+        mem_limit: 700m
+        ports:
+            - "8761:8761"
+        networks:
+            - currency-network
+        
+networks:
+    currency-network:
 ***
 
 ## 205. Step 19 - Running Spring Cloud API with Docker Compose
@@ -319,9 +357,13 @@ networks:
 
 ### 206. Debugging Problems with Docker Compose
 
+* https://github.com/in28minutes/spring-microservices-v3/tree/main/04.docker/01-step-by-step-changes#docker-compose
+
 ***
 
 ## 207. Spring Boot 3 Update - Zipkin URL Configuration
+
+* https://github.com/in28minutes/spring-microservices-v3/blob/main/04.docker/backup/docker-compose-05-zipkin.yaml
 
 ***
 
@@ -330,5 +372,10 @@ networks:
 ***
 
 ## 209. How to handle failures
+
+* 1. Re-frame Perspective
+* 2. Analyze Outcomes
+* 3. Seek Feedback
+* 4. Document Lessons
 
 ***
