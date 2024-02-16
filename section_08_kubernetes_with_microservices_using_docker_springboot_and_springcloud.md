@@ -1,4 +1,4 @@
-## 210. Step00 - Docker, Kubernetes and Microservices - Made for each
+## 210. Step 00 - Docker, Kubernetes and Microservices - Made for each
 
 ***
 
