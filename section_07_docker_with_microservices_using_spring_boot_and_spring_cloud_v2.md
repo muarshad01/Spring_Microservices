@@ -227,6 +227,9 @@ $ docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 ## 200. Step 14 - Getting Setup with Microservices for Creating Container
 
+* https://github.com/in28minutes/spring-microservices-v2
+* https://github.com/in28minutes/spring-microservices-v2/tree/main/04.docker
+
 ***
 
 ## 201. Step 15 - Creating Container Image for Currency Exchange
