@@ -349,6 +349,8 @@ services:
         
 networks:
     currency-network:
+```
+
 ***
 
 ## 205. Step 19 - Running Spring Cloud API with Docker Compose
