@@ -17,7 +17,7 @@
 
 * [Section 06: Microservices with Spring Cloud - V2](https://github.com/muarshad01/Spring_Microservices/blob/main/section_06_microservices_with_spring_cloud_v2.md) -- February 11, 2024
 
-* [Section 07: Docker with Microservices using Spring Boot and Spring Cloud - V2](https://github.com/muarshad01/Spring_Microservices/blob/main/section_07_docker_with_microservices_using_spring_boot_and_spring_cloud_v2.md)
+* [Section 07: Docker with Microservices using Spring Boot and Spring Cloud - V2](https://github.com/muarshad01/Spring_Microservices/blob/main/section_07_docker_with_microservices_using_spring_boot_and_spring_cloud_v2.md) -- February 16, 2024
 
 * [Section 08: Kubernetes with Microservices using Docker SpringBoot and SpringCloud](https://github.com/muarshad01/Spring_Microservices/blob/main/section_08_kubernetes_with_microservices_using_docker_springboot_and_springcloud.md)
 
