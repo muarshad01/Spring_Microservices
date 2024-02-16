@@ -187,13 +187,41 @@ $ docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 ## 197. Step 12 - Connecting Currency Exchange Microservice with Zipkin
 
+* Micrometer, OpenTelemetry, Zipkin 
+```xml
+<dependency>
+    <groupId>io.micrometer</groupId>
+    <artifactId>micrometer-observation</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>io.micrometer</groupId>
+    <artifactId>micrometer-tracing-bridge-otel</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>io.opentelemetry</groupId>
+    <artifactId>opentelemetry-exporter-zipkin</artifactId>
+</dependency>
+```
+
+* Edit `application.properties`
+    * `management.tracing.sampling.probability=1.0`
+    * `logging.pattern.level=%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+
+
 ***
 
-## 198. Step 13 - Connecting Currency Conversion Microservices & API
+## 198. Step 13 - Connecting Currency Conversion Microservice & API Gateway with Zipkin
 
 ***
 
 ## 199. Link for Next Lecture
+
+* Spring Boot 2.4+
+    * https://github.com/in28minutes/spring-microservices-v2/tree/main/04.docker
+* Spring Boot 3.0+
+    * https://github.com/in28minutes/spring-microservices-v3/tree/main/04.docker
 
 ***
 
