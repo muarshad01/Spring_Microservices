@@ -375,10 +375,9 @@ networks:
 
 ## 209. How to handle failures
 
-/*
 1. Re-frame Perspective
 2. Analyze Outcomes
 3. Seek Feedback
 4. Document Lessons
-*/
+
 ***
