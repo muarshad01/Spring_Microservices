@@ -234,6 +234,24 @@ $ docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 ## 201. Step 15 - Creating Container Image for Currency Exchange
 
+```xml
+<build>
+    <plugins>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <image>
+                <name>in28min/mmv2-${project.artifactId}:${project.version}</name>
+            </image>
+            <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+        </configuration>
+    </plugins>
+</build>
+```
+
+* Run As -> Maven Build
+    * Goals: spring-boot:build-image -DskipTests
+
 ***
 
 ## 202. Step 16 - Getting Started with Docker Compose - Currency
