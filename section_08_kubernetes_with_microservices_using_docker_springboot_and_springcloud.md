@@ -50,11 +50,9 @@ $ kubectl get service
 
 ## 218. Step 07 - Understanding Pods in Kubernetes
 
-* `Node[Pod1{C1, C2}, ..., 
-        Pod2{C1, C2}, ...,
-        ...
-       ]`
+* `Node[Pod1{C1, C2, ...}, Pod2{C1, C2, ...}, ...]`
 * Multiple containers within a Pod share the Pod resources and communicate with each other using `localhost`
+* Each pod has a unique IP address
 
 ```
 $ kubectl get pods -o wide
@@ -63,25 +61,50 @@ $ kubectl get pods
 $ kubectl describe pod NAME
 ```
 
-* Each pod has a unique IP address
-
-
 ### Namespaces
 * Provide ISOLATION for parts for cluster from other parts of cluster
-* DEV & QA environment running inside same cluster
-* How we separate resources of DEV from resources of QA
-* Create namespaces
+* Suppose, DEV & QA environments are running inside the same cluster
+* How can we separate the resources of DEV & QA environments
+* Solution: Create namespaces
+
+### Labels, Selectors
+* Tie a Pod with ReplicaSet or Service 
+
+### Annotation
+* Meta information about a Pod
+
 ***
 
-## 219. Step 08 - Understanding ReplicaSets in Kubernetes
+## 219. Step 08 - Understanding ReplicaSets in K8s
+
+```
+$ kubectl get replicasets
+$ kubectl get replicaset
+$ kubectl get rs
+
+$ kubectl get    pods -o wide
+$ kubectl delete pods NAME
+```
+
+### Scale
+```
+$ kubectl scale deployment NAME --replicas=3
+```
+
+```
+$ kubectl get events --sort-by=.metadata.crationTimestamp
+
+$ kubectl explain replicaset
+```
 
 ***
 
-## 220. Step 09 - Understanding Deployment in Kubernetes
+## 220. Step 09 - Understanding Deployment in K8s
 
 ***
 
-## 221. Step 10 - Quick Review of Kubernetes Concepts - Pods, 
+## 221. Step 10 - Quick Review of K8s Concepts - Pods, Replica Sets & Deployment 
+
 
 ***
 
@@ -89,11 +112,11 @@ $ kubectl describe pod NAME
 
 ***
 
-## 223. Step 11 - Understanding Services in Kuberntes
+## 223. Step 11 - Understanding Services in K8s
 
 ***
 
-## 224. Step 12 - Quick Review of GKE on Google Cloud Console
+## 224. Step 12 - Quick Review of `GKE` on Google Cloud Console
 
 ***
 
