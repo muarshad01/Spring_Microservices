@@ -26,7 +26,25 @@
 
 ***
 
-## 217. Step 06 - Quick Look at Kubernetes Concepts - Pods,
+## 217. Step 06 - Quick Look at K8s Concepts - Pods, ReplicaSet, Deployment, Service
+
+```
+$ kubectl get events
+
+$ kubectl get pods
+$ kubectl get replicatset
+$ kubectl get deployment
+$ kubectl get service
+```
+
+* K8s uses single responsibility principle
+
+### Features
+* Declarative
+* Easy Scaling
+* Load Balancing
+* Self Healing
+* Zero Downtime Deployments
 
 ***
 
