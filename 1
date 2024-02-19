@@ -50,12 +50,6 @@ $ kubectl get service
 
 ## 218. Step 07 - Understanding Pods in Kubernetes
 
-* `Node[Pod1{C1, C2}, ..., 
-        Pod2{C1, C2}, ...,
-        ...
-       ]`
-* Multiple containers within a Pod share the Pod resources and communicate with each other using `localhost`
-
 ```
 $ kubectl get pods -o wide
 $ kubectl explain pods
@@ -65,12 +59,12 @@ $ kubectl describe pod NAME
 
 * Each pod has a unique IP address
 
+* `Node[Pod1{C1, C2, ...}, Pod2{C1, C2}, ...]`
+* Multiple containers within a Pod share the Pod resources and communicate with each other using `localhost`
 
 ### Namespaces
 * Provide ISOLATION for parts for cluster from other parts of cluster
 * DEV & QA environment running inside same cluster
-* How we separate resources of DEV from resources of QA
-* Create namespaces
 ***
 
 ## 219. Step 08 - Understanding ReplicaSets in Kubernetes
