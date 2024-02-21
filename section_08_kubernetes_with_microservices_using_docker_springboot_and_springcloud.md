@@ -173,10 +173,19 @@ $ kubectl get services
 * Cluster
     * Master Node(s)
         * API Server (`kube-apiserver`)
-        * Distribute Database (`etcd`)
+        * Distributed Database (`etcd`)
         * Scheduler (`kube-scheduler`)
         * Controller Manager (`kube-controller-manager`)
     * Worker Node(s)
+        * Node Agent (`kubelet`)
+        * Networking Component (`kube-proxy`)
+        * Container Runtime (`docker`)
+        * PODS
+
+```
+$ kubectl get componentstatuses
+```
+
 ***
 
 ## 226. Installing Gcloud
