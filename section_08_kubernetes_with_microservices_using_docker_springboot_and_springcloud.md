@@ -148,6 +148,21 @@ $ kubectl get events --sort-by=.metadata.creationTimestamp
 
 ## 223. Step 11 - Understanding Services in K8s
 
+```
+$ kubectl get pods
+$ kubectl get pods -o wide
+$ kubectl delete pod <POD_NAME>
+
+```
+* Each Pod has a unique IP address
+* A service basically allows your application to receive traffic through a permanent lifetime IP address.
+
+```
+$ kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+$ kubectl get services
+```
+
+* ClusterIP service can only be access from inside the clueter. It doesn't have an EXTERNAL-IP
 ***
 
 ## 224. Step 12 - Quick Review of `GKE` on Google Cloud Console
