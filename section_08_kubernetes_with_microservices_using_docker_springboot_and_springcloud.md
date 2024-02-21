@@ -169,8 +169,14 @@ $ kubectl get services
 
 ***
 
-## 225. Step 13 - Understanding Kubernetes Architecture - 
-
+## 225. Step 13 - Understanding K8s Architecture - Master Node and Worker Nodes
+* Cluster
+    * Master Node(s)
+        * API Server (`kube-apiserver`)
+        * Distribute Database (`etcd`)
+        * Scheduler (`kube-scheduler`)
+        * Controller Manager (`kube-controller-manager`)
+    * Worker Node(s)
 ***
 
 ## 226. Installing Gcloud
