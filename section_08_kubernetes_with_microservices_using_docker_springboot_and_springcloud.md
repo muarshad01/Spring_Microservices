@@ -101,6 +101,30 @@ $ kubectl explain replicaset
 
 ## 220. Step 09 - Understanding Deployment in K8s
 
+```
+$ kubectl get rs
+$ kubectl get rs -o wide
+```
+
+```
+$ kubectl set image deployment hello-world-rest-api hello-world-rest-api:DUMMY_IMAGE:TEST
+
+$ kubectl get rs -o wide
+$ kubectl get pods
+
+
+$ kubectl get events --sort-by=.metadata.creationTimestamp
+```
+
+```
+$ kubectl set image deployment hello-world-rest-api hello-world-rest-api:0.0.2.RELEASE
+
+$ kubectl get pods
+$ kubectl get rs
+
+$ kubectl get events --sort-by=.metadata.creationTimestamp
+```
+
 ***
 
 ## 221. Step 10 - Quick Review of K8s Concepts - Pods, Replica Sets & Deployment 
