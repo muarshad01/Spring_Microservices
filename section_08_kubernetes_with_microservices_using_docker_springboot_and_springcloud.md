@@ -129,10 +129,20 @@ $ kubectl get events --sort-by=.metadata.creationTimestamp
 
 ## 221. Step 10 - Quick Review of K8s Concepts - Pods, Replica Sets & Deployment 
 
+* Deployment ensure that a release upgrade from V1 to V2 happens without a hitch
 
 ***
 
-## 222. Technology Change is an Opportunity
+## 222. Technology Change is an `Opportunity`
+
+* Boost Employability
+    * Be proficient with latest technologies
+* Foster Creativity
+    * New technologies inspire unique approaches to tasks 
+* Enhance Problem-Solving
+    * New tools / methodologies offer innovative solutions to complex problems 
+* Prepare for the Future
+    * Understanding emerging technologies sets you up for the long-term success
 
 ***
 
