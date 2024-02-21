@@ -198,9 +198,12 @@ $ kubectl get componentstatuses
 
 ## 228. Link for the Next Lecture
 
+* https://github.com/in28minutes/spring-microservices-v3/tree/main/05.kubernetes
+
 ***
 
 ## 229. Step 14 - Setup Currency Exchange & Conversion
+
 
 ***
 
