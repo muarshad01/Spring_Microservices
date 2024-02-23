@@ -257,6 +257,29 @@ $ watch curl ....
 
 ## 234. Step 19 - Enable Logging and Tracing APIs in Google Cloud Platform
 
+***
+
+## 235. Step 20 - Deploying Microservices using K8s YAML Configuration
+
+***
+
+## 236. Step 21 - Playing with K8s Declarative YAML Configuration
+
+***
+
+## 237. Step 22 - Creating Environment Variables to enable Microservice Communication
+
+***
+
+## 238. Step 23 - Understanding Centralized Configuration in K8s - Config Maps
+
+***
+
+## 239. Step 24 - Exploring Centralized Logging and Monitoring in GKE
+
+***
+
+## 240. Step 25 - Exploring Microservices Deployments with K8s
 
 ***
 
