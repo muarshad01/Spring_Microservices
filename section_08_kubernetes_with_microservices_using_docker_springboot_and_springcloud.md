@@ -306,22 +306,45 @@ $ kubectl get configmap currency-conversion -o yaml >> configmap.yaml
 ```
 $ kubectl rollout history deployment currency-conversion
 $ kubectl rollout history deployment currency-exchange
+$ kubectl rollout undo deployment currency-exchange --to-revision=1 deployment.apps/currency-exchange rolled back
 ```
 
 ***
 
-## 241. Step 26 - Configuring Liveness and Readiness Probes for
+## 241. Step 26 - Configuring Liveness and Readiness Probes for Microservices with K8s
+
+* Spring Boot Actuator
+    * `/health/readiness`
+    * `/health/liveness`
 
 ***
 
-## 242. Step 27- Autoscaling Microservices with Kubernetes
+## 242. Step 27- Autoscaling Microservices with K8s
+
+```
+$ kubectl scale deployment currency-exchange --replicas=2
+$ kubectl autoscale deployment currency-exchange --min=1 max=2 --cpu-percent=5
+```
+
+```
+$ kubectl get hps   # horizontal podautoscaler
+```
+
+```
+$ kubectl top pods
+$ kubectl top nodes
+```
 
 ***
 
-## 243. Step 28 - Delete Kubernetes Cluster Thank You!
+## 243. Step 28 - Delete K8s Cluster Thank You!
 
 ***
 
 ## 244. How can you help?
+
+***
+
+* WebServices -> RESTful WebServices -> SpringCloud -> Microservices
 
 ***
