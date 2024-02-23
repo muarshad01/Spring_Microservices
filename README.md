@@ -1,7 +1,18 @@
+# Learning Pledge
+
+* Learn Every Day
+    * Make learning part of your life
+* Build Habit
+    * Do things consistently for a long period of time
+ 
+***
+
 # Spring Microservices
 
 * [Git Code](https://github.com/in28minutes/spring-microservices-v3)
 * [Course Downloads](https://www.in28minutes.com/resources-microservices-course)
+
+***
 
 ### Use the following repo's based on your Spring Boot version
 * Spring Boot 3.0+ 
