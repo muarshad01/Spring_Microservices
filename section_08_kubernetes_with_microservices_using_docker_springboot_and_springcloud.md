@@ -261,9 +261,25 @@ $ watch curl ....
 
 ## 235. Step 20 - Deploying Microservices using K8s YAML Configuration
 
+```
+$ kubectl delete all -l app=currency-exchange
+$ kubectl delete all -l app=currency-conversion
+```
+
+```
+$ kubectl get all
+$ kubectl apply -f deployment.yaml
+$ kubectl get service --watch
+```
 ***
 
 ## 236. Step 21 - Playing with K8s Declarative YAML Configuration
+
+```
+$ kubectl get all
+$ kubectl apply -f deployment.yaml
+$ kubectl get service --watch
+```
 
 ***
 
@@ -273,6 +289,12 @@ $ watch curl ....
 
 ## 238. Step 23 - Understanding Centralized Configuration in K8s - Config Maps
 
+```
+$ kubectl crete configmap currency-conversion --from-literal=CURRENCY_EXCHANGE=http://currency-exchange
+
+$ kubectl get configmap currency-conversion
+$ kubectl get configmap currency-conversion -o yaml >> configmap.yaml
+```
 ***
 
 ## 239. Step 24 - Exploring Centralized Logging and Monitoring in GKE
