@@ -209,6 +209,55 @@ $ kubectl get componentstatuses
 
 ## 230. Step 15 - Container images for Exchange & Currency Conversion
 
+* Run as -> Maven Build 
+```
+Goals: spring-boot:build-image -DskipTests
+```
+
+```
+$ docker login
+$ docker push in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOP
+$ docker push in28min/mmv2-currency-conversion-service:0.0.11-SNAPSHOP
+```
+
+***
+
+## 231. Step 16 - Deploy Microservices to K8s & Understand Service Discovery
+
+```
+$ kubectl version
+
+$ kubect create deployment currency-exchange --image=in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOP
+$ kubectl expose deployment currency-exchange --type=LoadBalancer --port=8000
+$ kubectl get sve
+$ kubectl get services
+$ kubectl get pods
+$ kubectl get replicaset
+```
+***
+
+## 232. Step 17 - Creating Declarative Configuration K8s YAML for Microsercies
+
+```
+$ cd /in28Minutes/git/spring-microservices-v3/05.kubernetes/currency-exchange-service
+$ kubectl get deployment currency-exchange -o yaml >> deployment.yaml
+$ kubectl get service    currency-exchange -o yaml >>    service.yaml
+
+$ kubectl apply -f deployment.yaml
+```
+
+```
+$ watch curl ....
+```
+***
+
+## 233. Step 18 - Clean up K8s YAML for Microservices
+
+***
+
+## 234. Step 19 - Enable Logging and Tracing APIs in Google Cloud Platform
+
+
 ***
 
 ## 241. Step 26 - Configuring Liveness and Readiness Probes for
