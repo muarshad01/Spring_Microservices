@@ -303,6 +303,11 @@ $ kubectl get configmap currency-conversion -o yaml >> configmap.yaml
 
 ## 240. Step 25 - Exploring Microservices Deployments with K8s
 
+```
+$ kubectl rollout history deployment currency-conversion
+$ kubectl rollout history deployment currency-exchange
+```
+
 ***
 
 ## 241. Step 26 - Configuring Liveness and Readiness Probes for
