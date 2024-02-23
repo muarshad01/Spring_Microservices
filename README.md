@@ -3,7 +3,7 @@
 * Learn Every Day
     * Make learning part of your life
 * Build Habit
-    * Do things consistently for a long period of time
+    * Do things consistently for a long-period of time (30 mins daily for 30 days!!)
  
 ***
 
